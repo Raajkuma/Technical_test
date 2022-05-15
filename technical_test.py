@@ -7,7 +7,7 @@ Created on Sun May  4 20:10:35 2020
 import re
 def add(string):
     "Calculating the Sum of Total digit value from the string"
-    string=re.split(";|,", string)
+    string=re.split(";|,|\s|(?<!\d)[,.](?!\d)", string)
     sum_of_string_numbers=0
     negative_values=[]
     for i in string:
