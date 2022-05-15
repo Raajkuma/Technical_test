@@ -15,7 +15,6 @@ def add(string):
             if int(i)>=0:
                 sum_of_string_numbers+=int(i)
             else:
-                print()
                 negative_values.append(i)
 
     if len(negative_values)>0:
